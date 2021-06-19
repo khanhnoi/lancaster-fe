@@ -1,0 +1,128 @@
+@font-face {
+  font-family: Bahnschrift;
+  src: url(../../fonts/BAHNSCHRIFT.TTF);
+}
+@font-face {
+  font-family: PopinsSemi;
+  src: url(../../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: SFUITextMedium;
+  src: url(../../fonts/SFUIText-Medium.ttf);
+}
+
+@font-face {
+  font-family: Bahnschrift3;
+  src: url(../../fonts/BAHNSCHRIFT3.TTF);
+}
+
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url(../../fonts/static/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
+  font-family: PlayfairDisplayNormal;
+  src: url(../../fonts/static/PlayfairDisplay-Medium.ttf);
+}
+@font-face {
+  font-family: SegoeUI;
+  src: url(../../fonts/SegoeUI.ttf);
+}
+.container-custom {
+  width: 100%;
+}
+
+@keyframes oPacity {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+@keyframes menuItem {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-30px);
+    -webkit-backface-visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+@keyframes menuHeader {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-120px);
+    -webkit-backface-visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+@keyframes mainText1 {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-160px);
+    -webkit-backface-visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+@keyframes mainText2 {
+  0% {
+    transform: translateY(0);
+    -webkit-backface-visibility: hidden;
+  }
+  100% {
+    transform: translate(-160px, 0);
+    -webkit-backface-visibility: hidden;
+  }
+}
+@keyframes mainBox1 {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-160px, -50%);
+    -webkit-backface-visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%);
+    -webkit-backface-visibility: hidden;
+  }
+}
+@keyframes mainBox2 {
+  0% {
+    transform: translateY(-50%);
+    -webkit-backface-visibility: hidden;
+  }
+  100% {
+    transform: translate(-160px, -50%);
+    -webkit-backface-visibility: hidden;
+  }
+}

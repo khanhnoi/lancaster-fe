@@ -1,0 +1,202 @@
+// navigation scroll
+@media (max-width: 768px) {
+	// navigation scroll
+	#fp-nav {
+		display: none;
+	}
+	// Location
+	.location-body {
+		.bg-cover-dark--right {
+			background: rgb(20, 20, 22);
+			background: linear-gradient(
+				90deg,
+				rgba(27, 27, 27, 0.217) 0%,
+				rgba(70, 69, 69, 0.307) 10%,
+				rgba(12, 12, 12, 0.821) 90%
+			);
+		}
+		.bg-cover-dark--left {
+			background: rgb(20, 20, 22);
+			background: linear-gradient(
+				270deg,
+				rgba(27, 27, 27, 0.217) 0%,
+				rgba(70, 69, 69, 0.307) 10%,
+				rgba(12, 12, 12, 0.821) 90%
+			);
+		}
+	}
+	.location-map {
+		&-note {
+			width: 180px;
+			left: 10px;
+			.note-map {
+				height: 25px;
+				&-icon {
+					width: 15px;
+
+					&-dot {
+						width: 10px;
+						height: 10px;
+					}
+				}
+				&-title {
+					p {
+						font-size: 0.7rem;
+					}
+				}
+			}
+		}
+	}
+	//amenities
+	.amenities-card {
+		width: 500px;
+		&-title {
+			p {
+				font-size: 2rem;
+			}
+			&--small {
+				p {
+					font-size: 1rem;
+				}
+			}
+		}
+		&-text {
+			min-height: 20vh;
+			p {
+				font-size: 0.9rem;
+			}
+		}
+		&-button {
+			display: flex;
+			.button-hover {
+				padding: 12px 40px;
+				p {
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1100px) {
+	.amenities-header {
+		&-content {
+			&-title {
+				p {
+					font-size: 1.7rem;
+				}
+			}
+		}
+	}
+
+	.amenities-fixed {
+		.amenities-fixed-content {
+			.amenities-menu {
+				li {
+					font-size: 0.6rem;
+				}
+				&-brick {
+					height: 25px;
+				}
+				&-active {
+					position: relative;
+				}
+			}
+		}
+	}
+}
+
+//update kn
+@media screen and (min-width: 1500px) {
+	.header-overview {
+		&-card {
+			width: 90%;
+			position: relative;
+			left: -135px;
+			&-line {
+				position: absolute;
+			}
+			&-title {
+				p {
+					font-size: 2rem;
+				}
+			}
+			&-text {
+				p {
+					font-size: 1rem;
+				}
+			}
+			&-btn {
+				width: 150px;
+				height: 60px;
+				p {
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.section-header-top {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.section-header-bot {
+		display: none !important;
+	}
+	.header-overview {
+		&-card {
+			width: 80%;
+			&-line {
+				position: absolute;
+			}
+			&-title {
+				p {
+					// late can fix
+				}
+			}
+			&-text {
+				p {
+					font-size: 0.7rem;
+				}
+			}
+			&-btn {
+				p {
+					// late can fix
+				}
+			}
+		}
+	}
+	.section-header-user {
+		right: 53px !important;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.overview-main-right {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 625px) {	
+	.section-header {
+		// menu
+		&-user {
+			display: none;
+			&-login {
+				//late update
+			}
+			&-regis {
+				//late update
+			}
+		}
+	}
+	//ỏm  login
+	.login-form,
+	.register-form {
+		width: 100%;
+	}
+}
+

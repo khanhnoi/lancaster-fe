@@ -1,0 +1,93 @@
+#fp-nav {
+	opacity: 0 !important;
+	transition: $transition_time-hover;
+	span {
+		background-color: #ffffff !important;
+	}
+	&:hover {
+		opacity: 1 !important;
+	}
+}
+#fullpage {
+	overflow: hidden;
+}
+//display modal on Map
+.ReactModal__Overlay--after-open {
+	z-index: 9999 !important;
+}
+
+body {
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+}
+// custom Map
+a[href^="http://maps.google.com/maps"]
+{
+	display: none !important;
+}
+a[href^="https://maps.google.com/maps"]
+{
+	display: none !important;
+}
+
+.gmnoprint a,
+.gmnoprint span,
+.gm-style-cc {
+	display: none;
+}
+.gmnoprint div {
+	background: none !important;
+}
+
+//custom carousel (overview)
+.react-multi-carousel-track {
+	transition: 2s !important;
+}
+.react-multi-carousel-item {
+	img {
+		pointer-events: none !important;
+		user-select: none !important;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000000;
+		opacity: 0.2;
+	}
+}
+.react-multi-carousel-list {
+	align-items: baseline !important;
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+	}
+}
+//
+* {
+	&::selection {
+		background: rgba(#000000, 0.2); /* WebKit/Blink Browsers */
+	}
+	&::-moz-selection {
+		background: rgba(#000000, 0.2); /* Gecko Browsers */
+	}
+}
+p {
+	&::selection {
+		background: #c58a1d; /* WebKit/Blink Browsers */
+	}
+	&::-moz-selection {
+		background: #c58a1d; /* Gecko Browsers */
+	}
+}

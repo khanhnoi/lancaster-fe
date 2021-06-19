@@ -1,0 +1,72 @@
+.left-to-right {
+    animation: leftToRight 0.5s !important;
+}
+.none-to-display {
+	animation: noneToDisplay 1s !important;
+}
+.display-to-none {
+	animation: displayToNone 1s !important;
+}
+
+.bg-blur {
+	animation-name: toBlur;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-out;
+	animation-delay: 0s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-play-state: running;
+}
+
+@keyframes leftToRight {
+	0% {
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes noneToDisplay {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes displayToNone {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+
+@keyframes toBlur {
+	0% {
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+	}
+	50% {
+		-webkit-filter: blur(5px);
+		filter: blur(5px);
+	}
+	100% {
+		filter: blur(0);
+		-webkit-filter: blur(0);
+	}
+}
+
+@keyframes liquid {
+	0% {
+		transform: translate(-50%,-75%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%,-75%) rotate(360deg);
+	}
+}

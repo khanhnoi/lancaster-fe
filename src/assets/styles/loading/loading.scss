@@ -1,0 +1,74 @@
+.loading-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000000;
+    .logo-loading {
+        position: absolute;
+        background-color: #ffffff;
+        top: 0;
+        left: 0;
+        padding: 1rem 2rem;
+        img {
+            margin: auto;
+        }
+    }
+    .loading-video {
+        width: 100%;
+        height: 100vh;
+        video {
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    .loading-text {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        p {
+            font-family: PopinsSemi;
+            font-size: 24px;
+            color: #ffffff;
+        }
+        &-button {
+            width: 100%;
+            text-align: center;
+            margin-top: 22px;
+            button {
+                position: relative;
+                width: 185px;
+                height: 60px;
+                background-color: #000000;
+                font-family: PopinsSemi;
+                font-size: 16px;
+                color: #ffffff;
+                border: solid 2px #ffffff;
+                z-index: 2;
+                transition: $transition_time;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    background-color: #ffffff;
+                    transition: $transition_time;
+                    z-index: -1;
+                }
+                &:hover {
+                    color: #000000;
+                    &::after {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

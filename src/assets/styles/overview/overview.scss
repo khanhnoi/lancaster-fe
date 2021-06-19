@@ -1,0 +1,128 @@
+.overview-main {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 25vh;
+  &-left {
+    animation-name: menuItem;
+    animation-duration: 3s;
+    &-header {
+      p {
+        font-family: Bahnschrift;
+        font-weight: 200;
+        font-size: 1.3rem;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+    }
+    &-title {
+      p {
+        text-transform: uppercase;
+        font-family: Bahnschrift;
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 0.5px 0.5px 0.5px #000;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis !important;
+        overflow: hidden;
+      }
+    }
+    &-text {
+      padding-bottom: 50px;
+      p {
+        font-family: Bahnschrift;
+        font-size: 0.85rem;
+        font-weight: 300;
+        color: #ffffff;
+        text-shadow: 0.5px 0.5px 0.5px #000;
+        max-width: 605px;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis !important;
+        overflow: hidden;
+      }
+    }
+    &-button {
+      text-transform: uppercase;
+      margin-top: 25px;
+      button {
+        border: solid 2px #ffffff;
+        min-width: 200px;
+        height: 50px;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: initial;
+        transition: $transition_time;
+        position: relative;
+        z-index: 1;
+        a {
+          font-family: SFUIText;
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+        img {
+          width: 20px;
+          margin-left: 5px;
+          transition: $transition_time-hover;
+          position: relative;
+          left: 0;
+          transition: $transition_time-hover;
+        }
+        &:hover {
+          img {
+            left: 10px;
+            filter: invert(100%);
+          }
+        }
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    height: 100%;
+    animation-name: menuItem;
+    animation-duration: 3s;
+    img {
+      width: 100%;
+      object-fit: cover;
+      margin: auto 0;
+    }
+  }
+  &-box {
+    background-color: #000000;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    p {
+      font-family: PlayfairDisplaNormal;
+      font-size: 25px;
+      line-height: 1.28;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}
+
+.react-multi-carousel-list {
+  width: 100%;
+}
+
+//update kn - hederOverview new
+
+.overview-main {
+  &-button {
+  }
+}

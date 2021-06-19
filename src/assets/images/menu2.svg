@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="menu_1_" width="31.545" height="31.545" viewBox="0 0 31.545 31.545">
+    <defs>
+        <style>
+            .cls-1{fill:#000}
+        </style>
+    </defs>
+    <g id="Group_40">
+        <g id="Group_39">
+            <path id="Path_60" d="M26.986 0H4.559a4.559 4.559 0 0 0 0 9.119h22.427a4.559 4.559 0 1 0 0-9.119zm0 6.654H4.559a2.095 2.095 0 0 1 0-4.19h22.427a2.095 2.095 0 0 1 0 4.19z" class="cls-1"/>
+        </g>
+    </g>
+    <g id="Group_42" transform="translate(0 11.213)">
+        <g id="Group_41">
+            <path id="Path_61" d="M26.986 182H4.559a4.559 4.559 0 0 0 0 9.119h22.427a4.559 4.559 0 0 0 0-9.119zm0 6.654H4.559a2.095 2.095 0 1 1 0-4.19h22.427a2.095 2.095 0 1 1 0 4.19z" class="cls-1" transform="translate(0 -182)"/>
+        </g>
+    </g>
+    <g id="Group_44" transform="translate(0 22.427)">
+        <g id="Group_43">
+            <path id="Path_62" d="M26.986 364H4.559a4.559 4.559 0 0 0 0 9.119h16.266a1.232 1.232 0 0 0 0-2.464H4.559a2.095 2.095 0 0 1 0-4.19h22.427a2.095 2.095 0 0 1 0 4.19 1.232 1.232 0 0 0 0 2.464 4.559 4.559 0 0 0 0-9.119z" class="cls-1" transform="translate(0 -364)"/>
+        </g>
+    </g>
+</svg>
